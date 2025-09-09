@@ -93,6 +93,56 @@
             "width": 6,
             "height": 6
           }
+        },
+        {
+          "widget": {
+            "name": "704cb73c",
+            "queries": [
+              {
+                "name": "main_query",
+                "query": {
+                  "datasetName": "0056ea16",
+                  "fields": [
+                    {
+                      "name": "job",
+                      "expression": "`job`"
+                    },
+                    {
+                      "name": "transformation",
+                      "expression": "`transformation`"
+                    }
+                  ],
+                  "disaggregated": true
+                }
+              }
+            ],
+            "spec": {
+              "version": 3,
+              "widgetType": "bar",
+              "encodings": {
+                "x": {
+                  "fieldName": "job",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "job"
+                },
+                "y": {
+                  "fieldName": "transformation",
+                  "scale": {
+                    "type": "categorical"
+                  },
+                  "displayName": "transformation"
+                }
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 6,
+            "width": 3,
+            "height": 6
+          }
         }
       ],
       "pageType": "PAGE_TYPE_CANVAS"
