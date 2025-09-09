@@ -48,5 +48,10 @@ resources:
     test_dashboard:
       display_name: 'Test Dashboard'
       file_path: ../src/dashboardtest.lvdash.json
+      permissions:
+        - level: CAN_VIEW
+          group_name: users
+        - level: CAN_MANAGE
+          group_name: admin
 
     
