@@ -48,10 +48,9 @@ resources:
     test_dashboard:
       display_name: 'Test Dashboard'
       file_path: ../src/dashboardtest.lvdash.json
+      warehouse_id: e2330af939e17b84
       permissions:
-        - level: CAN_VIEW
+        - level: CAN_EDIT
           group_name: users
-        - level: CAN_MANAGE
-          group_name: admin
 
     
