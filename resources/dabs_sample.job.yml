@@ -43,3 +43,10 @@ resources:
             client: "2"
             dependencies:
               - ../dist/*.whl
+
+  dashboards:
+    test_dashboard:
+      display_name: 'Test Dashboard'
+      file_path: ../src/dashboardtest.lvdash.json
+
+    

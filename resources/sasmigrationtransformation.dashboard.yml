@@ -1,0 +1,6 @@
+resources:
+  dashboards:
+    sasmigrationtransformation:
+      display_name: "SasMigrationTransformation"
+      warehouse_id: e2330af939e17b84
+      file_path: ../src/sasmigrationtransformation.lvdash.json
