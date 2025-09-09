@@ -1,0 +1,106 @@
+{
+  "datasets": [
+    {
+      "name": "257de8d8",
+      "displayName": "Job Listing Information",
+      "queryLines": [
+        ""
+      ],
+      "catalog": "test_catalog",
+      "schema": "test_schema"
+    },
+    {
+      "name": "0056ea16",
+      "displayName": "Transformation Job Summary Data",
+      "queryLines": [
+        "SELECT\n",
+        "  job,\n",
+        "  transformation,\n",
+        "  count\n",
+        "FROM test_catalog.test_schema.transformations_list\n",
+        "WHERE count > 0"
+      ]
+    },
+    {
+      "name": "c4c608c7",
+      "displayName": "Active Transformation Job Counts",
+      "queryLines": [
+        "SELECT\n",
+        "  job,\n",
+        "  transformation,\n",
+        "  count\n",
+        "FROM test_catalog.test_schema.transformations_list\n",
+        "WHERE count > 0"
+      ]
+    },
+    {
+      "name": "2e2b7b3d",
+      "displayName": "Untitled dataset",
+      "queryLines": [
+        "SELECT\n",
+        "  job,\n",
+        "  transformation,\n",
+        "  count\n",
+        "FROM test_catalog.test_schema.transformations_list\n",
+        "WHERE count > 0"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "name": "823582c0",
+      "displayName": "Transformation",
+      "layout": [
+        {
+          "widget": {
+            "name": "c4f3ec41",
+            "queries": [
+              {
+                "name": "7c4fbbdb42bb4207952c9d8b44fbd63e",
+                "query": {
+                  "datasetName": "0056ea16",
+                  "fields": [
+                    {
+                      "name": "transformation",
+                      "expression": "`transformation`"
+                    },
+                    {
+                      "name": "job",
+                      "expression": "`job`"
+                    },
+                    {
+                      "name": "column_2c745fc0112",
+                      "expression": "SUM(`count`)"
+                    }
+                  ],
+                  "disaggregated": false
+                }
+              }
+            ],
+            "spec": {
+              "version": 0,
+              "viz_spec": {
+                "display_name": "Transformation count in each job",
+                "viz_type": "CHART",
+                "serialized_options": "{\"isAggregationOn\":true,\"series\":{\"error_y\":{\"type\":\"data\",\"visible\":true},\"stacking\":null},\"coefficient\":1,\"yAxis\":[{\"type\":\"-\"},{\"opposite\":true,\"type\":\"-\"}],\"columnConfigurationMap\":{\"x\":{\"column\":\"transformation\",\"id\":\"column_2c745fc0109\"},\"y\":[{\"column\":\"job\",\"id\":\"column_2c745fc0110\"}],\"zVal\":{\"column\":\"count\",\"id\":\"column_2c745fc0112\",\"transform\":\"SUM\"}},\"alignYAxesAtZero\":true,\"direction\":{\"type\":\"counterclockwise\"},\"swappedAxes\":false,\"percentFormat\":\"0[.]00%\",\"textFormat\":\"\",\"legend\":{\"traceorder\":\"normal\"},\"globalSeriesType\":\"heatmap\",\"version\":2,\"sizemode\":\"diameter\",\"seriesOptions\":{\"column_2c745fc0107\":{\"name\":\"count\",\"type\":\"heatmap\",\"yAxis\":0},\"column_2c745fc0110\":{\"type\":\"heatmap\",\"yAxis\":0}},\"error_y\":{\"type\":\"data\",\"visible\":true},\"sortX\":true,\"showDataLabels\":false,\"missingValuesAsZero\":true,\"useAggregationsUi\":true,\"numberFormat\":\"0,0.[00000]\",\"dateTimeFormat\":\"DD/MM/YYYY HH:mm\",\"sortY\":true,\"valuesOptions\":{},\"xAxis\":{\"labels\":{\"enabled\":true},\"type\":\"-\"}}",
+                "query_name": "7c4fbbdb42bb4207952c9d8b44fbd63e"
+              }
+            }
+          },
+          "position": {
+            "x": 0,
+            "y": 0,
+            "width": 6,
+            "height": 6
+          }
+        }
+      ],
+      "pageType": "PAGE_TYPE_CANVAS"
+    }
+  ],
+  "uiSettings": {
+    "theme": {
+      "widgetHeaderAlignment": "ALIGNMENT_UNSPECIFIED"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+# The main pipeline for dabs_sample
+resources:
+  pipelines:
+    dabs_sample_pipeline:
+      name: dabs_sample_pipeline
+      catalog: workspace
+      schema: dabs_sample_${bundle.target}
+      serverless: true
+      libraries:
+        - notebook:
+            path: ../src/dlt_pipeline.ipynb
+
+      configuration:
+        bundle.sourcePath: ${workspace.file_path}/src
