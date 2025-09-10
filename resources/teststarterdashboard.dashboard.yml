@@ -1,0 +1,6 @@
+resources:
+  dashboards:
+    teststarterdashboard:
+      display_name: "TestDashboard"
+      warehouse_id: e2330af939e17b84
+      file_path: ../src/teststarterdashboard.lvdash.json 
