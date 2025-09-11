@@ -1,6 +1,8 @@
 resources:
   dashboards:
     teststarterdashboard:
-      display_name: "TestDashboard"
+      display_name: ${bundle.name} Test - ${bundle.target}
       warehouse_id: e2330af939e17b84
-      file_path: ../src/teststarterdashboard.lvdash.json 
+      file_path: ../src/teststarterdashboard.lvdash.json
+
+

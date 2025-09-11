@@ -46,7 +46,7 @@ resources:
 
   dashboards:
     test_dashboard:
-      display_name: 'Test Dashboard'
+      display_name: ${bundle.name} Dashboard - ${bundle.target}
       file_path: ../src/dashboardtest.lvdash.json
       warehouse_id: e2330af939e17b84
       permissions:
