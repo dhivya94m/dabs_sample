@@ -13,6 +13,11 @@ include:
   - resources/*.yml
   - resources/*/*.yml
 
+sync:
+  exclude:
+    - src/*.lvdash.json
+
+
 targets:
   dev:
     # The default target uses 'mode: development' to create a development copy.

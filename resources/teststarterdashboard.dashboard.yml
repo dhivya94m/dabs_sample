@@ -1,8 +1,14 @@
 resources:
   dashboards:
     teststarterdashboard:
-      display_name: ${bundle.name} Test - ${bundle.target}
+      display_name: ${bundle.name}_Test - ${bundle.target}
       warehouse_id: e2330af939e17b84
       file_path: ../src/teststarterdashboard.lvdash.json
+      permissions:
+        - level: CAN_EDIT
+          group_name: users
+     
+
+
 
 
